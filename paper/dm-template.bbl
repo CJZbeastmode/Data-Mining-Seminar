@@ -21,6 +21,16 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{elements}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip
+  1em plus 0.5em minus 0.4em\relax New York: Springer, 2009.
+
+\bibitem{kernel}
+T.~Hofmann, B.~Sch{\"o}lkopf, and A.~J. Smola, \emph{Learning with Kernels:
+  Support Vector Machines, Regularization, Optimization, and Beyond}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 2002.
+
 \bibitem{ietf-ipfix-protocol}
 B.~Claise, ``{IPFIX} protocol specifications,'' Internet-Draft,
   draft-ietf-ipfix-protocol-07, December 2004.

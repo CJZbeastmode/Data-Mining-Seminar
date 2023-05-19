@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  10 MAY 2023 16:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  18 MAY 2023 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/jay/Desktop/dm-template/dm-template.tex
-(/Users/jay/Desktop/dm-template/dm-template.tex
+**/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex
+(/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./IEEEtran-modified.cls
 Document Class: IEEEtran-modified 2002/11/18 revision V1.6b by Michael Shell
@@ -180,7 +180,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box53
-) (./dm-template.aux)
+) (./dm-template.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+)
 \openout1 = `dm-template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 265.
@@ -216,27 +226,48 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (./abstract.tex) (./introduction.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) (./section1.tex
-<figures//figure1.png, id=1, 497.86pt x 580.1675pt>
-File: figures//figure1.png Graphic file (type png)
-<use figures//figure1.png>
-Package pdftex.def Info: figures//figure1.png  used on input line 12.
-(pdftex.def)             Requested size: 49.78891pt x 58.02014pt.
+<figures//Maximum_Margin_Classifer.png, id=1, 462.528pt x 346.896pt>
+File: figures//Maximum_Margin_Classifer.png Graphic file (type png)
+<use figures//Maximum_Margin_Classifer.png>
+Package pdftex.def Info: figures//Maximum_Margin_Classifer.png  used on input line 19.
+(pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
+<figures//Support_Vector_Classifier.png, id=3, 462.528pt x 346.896pt>
+File: figures//Support_Vector_Classifier.png Graphic file (type png)
+<use figures//Support_Vector_Classifier.png>
+Package pdftex.def Info: figures//Support_Vector_Classifier.png  used on input line 39.
+(pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
+<figures//Non_Linearly_Separable_Data.png, id=4, 462.528pt x 346.896pt>
+File: figures//Non_Linearly_Separable_Data.png Graphic file (type png)
+<use figures//Non_Linearly_Separable_Data.png>
+Package pdftex.def Info: figures//Non_Linearly_Separable_Data.png  used on input line 55.
+(pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./conclusion.tex) (./dm-template.bbl [1{/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+<figures//Kernel_Separation.png, id=5, 462.528pt x 346.896pt>
+File: figures//Kernel_Separation.png Graphic file (type png)
+<use figures//Kernel_Separation.png>
+Package pdftex.def Info: figures//Kernel_Separation.png  used on input line 67.
+(pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
+) (./implementation.tex [1{/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures//figure1.png>])
+ <./figures//Maximum_Margin_Classifer.png> <./figures//Support_Vector_Classifier.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+ (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+ (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) (./section1.tex
+<figures//figure1.png, id=17, 497.86pt x 580.1675pt>
+File: figures//figure1.png Graphic file (type png)
+<use figures//figure1.png>
+Package pdftex.def Info: figures//figure1.png  used on input line 11.
+(pdftex.def)             Requested size: 49.78891pt x 58.02014pt.
+) (./conclusion.tex) (./dm-template.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -248,22 +279,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[2
+[2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png> <./figures//figure1.png>] (./dm-template.aux)
 
-] (./dm-template.aux) ) 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2856 strings out of 478268
- 47844 string characters out of 5835366
- 348702 words of memory out of 5000000
- 21034 multiletter control sequences out of 15000+600000
+ 2898 strings out of 478268
+ 49304 string characters out of 5835366
+ 349755 words of memory out of 5000000
+ 21069 multiletter control sequences out of 15000+600000
  507421 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,62p,290b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dm-template.pdf (2 pages, 117782 bytes).
+ 55i,9n,62p,304b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dm-template.pdf (2 pages, 188511 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

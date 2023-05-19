@@ -1,0 +1,43 @@
+\section{implementation}
+The problem of support vector machine is an optimization problem. The goal is, as mentioned, 
+to find the optimal hyperplane that separates the data in a way that the margin is maximized.
+The separation of hyperplane is, in this case, fundamental to the functionality of SVM.
+
+
+
+The mathematical definition of hyperplane is given by: (Page 418 elements learning)
+\begin{equation}
+    \{x \in \mathbb{R}^p: x^T \beta + \beta_0 = 0\}
+\end{equation}
+where $\beta$ is the vector of coefficients and $\beta_0$ is the intercept.
+In this case, the margin problem becomes a problem of separating the hyperplane. This procedure constructs linear decision
+boundaries that attempt to separate the data into two or more classes as precisely as possible. To solve this problem,
+there are two mechanics available: Rosenblatt and Optimal.
+
+The \emph{Rosenblatt's perceptron learning algorithm} aims to find the optimal hyperplane in an iterative way. The algorithm minizies
+the distance of misclassified points to the decision boundary. The goal of this algorithm is to minimize the following equation
+\begin{equation}
+    \sum_{i\in M} -y_i(x_i^T \beta + \beta_0)
+\end{equation}
+where $M$ is the set of misclassified points and $y_i$ is the class label of $x_i$, being either 1 or -1. Using stochastic gradient
+descent, the algorithm updates the coefficients and intercept. However, the perceptron learning algorithm is not deterministic, since
+the result depends on the starting values. Furthermore, the algorithm does not converge if the data is not linearly separable, resulting
+in an infinite loop if the case was not detected beforehand.
+
+The \emph{optimal separating hyperplane} aims to find the hyperplane that maximize the distance to the closet point from either class. 
+(Vapnik). The problem can be mathematically defined as:
+\begin{equation}
+    \max_{\beta, \beta_0} M
+\end{equation}
+
+
+(Page 130 elements)
+
+
+TODO: Optimal (Page 132 elements)
+
+
+The kernel function is defined as:
+\begin{equation}
+    K(x_i, x_j) = \phi(x_i)^T \phi(x_j)
+\end{equation}
