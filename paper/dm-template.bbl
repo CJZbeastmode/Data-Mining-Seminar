@@ -54,4 +54,9 @@ S.~Tong and D.~Koller, ``Support vector machine active learning with
   applications to text classification,'' \emph{The Journal of Machine Learning
   Research}, vol.~2, pp. 45--66, 12 2001.
 
+\bibitem{image-classification}
+K.~Kim, K.~Jung, and J.~Kim, ``Color texture-based object detection: An
+  application to license plate localization,'' vol. 2388, 01 2002, pp.
+  293--309.
+
 \end{thebibliography}

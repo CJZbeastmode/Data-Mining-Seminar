@@ -15,47 +15,48 @@ Database file #2: references.bib
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in R9
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in Elements12
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in Elements4
+Warning--empty booktitle in image-classification
 
 Done.
-You've used 6 entries,
+You've used 7 entries,
             4039 wiz_defined-function locations,
-            1245 strings with 15977 characters,
-and the built_in function-call counts, 3378 in all, are:
-= -- 255
-> -- 89
-< -- 17
-+ -- 40
-- -- 18
-* -- 190
-:= -- 511
-add.period$ -- 12
-call.type$ -- 6
-change.case$ -- 8
-chr.to.int$ -- 33
-cite$ -- 9
-duplicate$ -- 258
-empty$ -- 314
-format.name$ -- 24
-if$ -- 764
+            1251 strings with 16133 characters,
+and the built_in function-call counts, 4267 in all, are:
+= -- 321
+> -- 109
+< -- 26
++ -- 52
+- -- 21
+* -- 233
+:= -- 628
+add.period$ -- 14
+call.type$ -- 7
+change.case$ -- 9
+chr.to.int$ -- 54
+cite$ -- 11
+duplicate$ -- 321
+empty$ -- 392
+format.name$ -- 28
+if$ -- 976
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 48
-newline$ -- 41
-num.names$ -- 6
-pop$ -- 139
+int.to.str$ -- 7
+missing$ -- 59
+newline$ -- 44
+num.names$ -- 7
+pop$ -- 169
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 8
-skip$ -- 258
+skip$ -- 327
 stack$ -- 0
-substring$ -- 43
-swap$ -- 172
-text.length$ -- 6
+substring$ -- 93
+swap$ -- 224
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 6
-warning$ -- 3
-while$ -- 9
-width$ -- 7
-write$ -- 72
-(There were 3 warnings)
+type$ -- 7
+warning$ -- 4
+while$ -- 13
+width$ -- 8
+write$ -- 81
+(There were 4 warnings)

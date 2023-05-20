@@ -69,3 +69,34 @@ For transductive learning cases such as relevance feedback, the classifier
 learns a SVM with both labeled and unlabeled data points. In reality, it turns
 out that combining MinMax margin and ratio margin methods delivers the best
 result. \cite{text-classification}
+
+\subsection*{Image Classification}
+The problem of object detection in images is a challenging task in the
+data mining field. Some of the challenges include: Variations in shape
+due to distortions, variations in color due to illumination conditions,
+and variations in size due to perspective. 
+
+For this problem, we observe a specific use case: The detection of
+license plates in images. The research group in Korea Advanced Institute of 
+Science and Technology has proposed an algorithm based on SVM to analyze the 
+color textural properties of the license plates. The algorithm goes as
+follows:
+
+\begin{itemize}
+    \item Set up initial locations and sizes of search windows in images.
+    \item Generate the license plate probability distribution using SVM.
+    \item Estimate parameters of the license plate using mathematical equations.
+    Parameters include: location, size, orientation, and so on.
+    \item Modify the search windows based on the estimated parameters.
+    \item Reestimate the parameters using the new search windows.
+    \item Output bounding windows as the result.
+\end{itemize}
+
+This algorithm is called continuously adaptive meanshift algorithm (CAMShift).
+The main usage of SVM here is to predict the probability of a pixel belonging
+to a license plate, which enables to essential parameters to be accurately estimated.
+It produces solid result within seconds, with an average miss rate of around
+8.78\% and an average false detection rate of around 14.88\%.
+Nevertheless, this algorithm is still not perfectly responsive to bad illumination
+and excessive burring.
+\cite{image-classification}
