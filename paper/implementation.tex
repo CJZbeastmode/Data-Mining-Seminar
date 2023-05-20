@@ -131,32 +131,59 @@ The interpretation of the slack variable helps us to determine whether an observ
 The $i$th observation is on the correct side of the margin if $\epsilon_i = 0$. Otherwise, 
 the $i$th observation is on the wrong side of the margin if $\epsilon_i > 0$ and on the wrong side of the hyperplane
 if $\epsilon_i > 1$. The parameter $C$, in this case, is the tuning paramter. It determines the budget of violations
-that could happen in this classification problem. The choice of C plays a decisive role in the learning process.
+that could happen in this classification problem. The choice of $C$ plays a decisive role in the learning process.
 If $C$ is large, then many observations violate the margin, which causes the involvement of many observations in 
 determining the hyperplane. On the other hand, smaller $C$s result in a classifier with lower bias but higher varianace.
 In practice, $C$ is chosen using cross-validation. 
 
-With the knowledge given above, we can formally derive the optimization problem for support vector machine:
+Based on the optimization problem given above, we can derive the formal definition of SVM. In comparison to 
+support vector classifier, the SVM transform the data into a higher dimension space $p'$, so that the data could be
+linearly separable. For instance, we transform the features $X_1, X_2, ..., X_p$ into $X_1, X_1^{p'} X_2^{p'}, ..., X_p^{p'}$.
+The optimization problem with the transformed data can then be altered to: (R 380)
+
 \begin{equation}
     \begin{aligned}
-    \max_{\beta, \beta_0, \epsilon} \frac12{||\beta||}^2 + C\sum_{i=1}^n \epsilon_i \\
-    \text{subject to}\  y_i(\beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + ... + \beta_px_{ip}) \geq 1 - \epsilon_i\  \forall\ i = 1, ..., n\\
-    \epsilon_i \geq 0
+      & \underset{\textstyle {\beta_0, \beta_{11}, \beta_{12}, ..., \beta_{p(p-1)'}, \beta_{pp'}, \epsilon_1, ..., \epsilon_n, M}}{\text{maximize}} \quad
+        M \\
+      & \text{subject to} \\
+      & y_1(\beta_0 + \sum_{j=1}^p \sum_{k=1}^{p'} \beta_{jk}x_{ij}^k )\geq M (1-\epsilon_i) \\
+      & \sum_{i=1}^n\epsilon_i \leq C,\  \epsilon_i \geq 0, \ \sum_{j=1}^p\sum_{k=1}^{p'}\beta_{jk}^2 = 1
     \end{aligned}
 \end{equation}
 
+In order to perform the transformation and simplify this problem, we use a kernel function $K(x, x')$. It is defined as: (elements 424)
 \begin{equation}
-\begin{aligned}
-\max_{\beta, \beta_0, \epsilon} \quad & \frac12{||\beta||}^2 + C\sum_{i=1}^n \epsilon_i\\
-\textrm{subject to} \quad & y_i(\beta_0 + \beta_1x_{i1} + \beta_2x_{i2} + ... + \beta_px_{ip}) \geq 1 - \epsilon_i\ \\
-  &\xi\geq0    \\
-  \epsilon_i \geq 0 \\
-\end{aligned}
+    K(x, x') = \langle h(x), h(x') \rangle
+\end{equation}
+where $h(x)$ is a transformation function. 
+The transformation process leaves us with a lot of freedom, and we are able to freely decide how we should transform the
+data. The two popular choices of kernel functions in pracitcal applications are:
+\begin{itemize}
+    \item dth-Degree Polynomial kernel: $K(x, x') = (1 + \langle x, x' \rangle)^d$
+    \item Radial kernel: $K(x, x') = \exp(-\gamma ||x - x'||^2)$
+\end{itemize}
+
+Let us first take a look at the polynomial kernel. The polynomial kernel transforms each data point into a polynomial
+of degree $d$ and fits a support vector classifier into this higher-dimensional space. This 
+transformation leads to a flexible decision boundary. 
+\begin{equation}
+    K(x, x') = (1 + \langle x, x' \rangle)^d = (1 + \sum_{j=1}^px_{ij}x_{i'j})^d
 \end{equation}
 
+Another popular choice is the radial kernel. In order to understand the radial kernel, we first need to understand
+the following scenario.
+If a given test observation $x^*$ is far away from the observation $x_i$,
+then the Euclidean distance between the two points will be large.
+As a result, the exponential term of the negative value of the Euclidean distance will be close to zero.
+In this case, the presence of $x^*$ will not have much effect on the transformation.
+On the other hand, if $x^*$ is close to $x_i$, then the exponential term will be close to one, which
+will exert a strong influence on the transformation. The radial kernel utilizes this property of the
+exponential function to emphasize the points that are close to the test observation $x^*$.
 
-In order to separate the non-linearly separable data, we can 
-The kernel function is defined as:
 \begin{equation}
-    K(x_i, x_j) = \phi(x_i)^T \phi(x_j)
+    K(x, x') = \exp(-\gamma ||x - x'||^2) = \exp(-\gamma \sum_{j=1}^p(x_{ij} - x_{i'j})^2)
 \end{equation}
+
+The implementation of kernels in SVM saves computational power, since for each pair of data points, we
+only need to calculate the transformed value once. Furthermore, the transformative property of the
+kernel leads to a flexible and precise boundary.
