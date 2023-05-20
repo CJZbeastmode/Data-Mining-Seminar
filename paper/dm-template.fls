@@ -239,6 +239,13 @@ INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/latexco
 INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT ./title.tex
+INPUT ./title.tex
+INPUT ./title.tex
+INPUT title.tex
+INPUT ./title.tex
+INPUT ./title.tex
+INPUT title.tex
 INPUT ./abstract.tex
 INPUT ./abstract.tex
 INPUT ./abstract.tex
