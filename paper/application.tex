@@ -7,11 +7,12 @@ utilized in: Face recognition, text classification, image classification,
 bioinformatics and medical diagnosis, as well as handwriting recognition.
 
 \subsection*{Face Recognition}
-Face recognition is a biometric method that is used to identify a specific
+Face recognition is a biometric method that is widely used to today in order
+to identify a specific
 person. It captures facial features such as eyes, chins, nose, et cetera, and
-uses the properties, for example, the distance or the angel between two parts, 
-to distinguish one person from another. The difficulty of this method is that
-in reality, there are people who look similar to each other. The usage of SVM, 
+uses the properties, for example, the distance or the angle between two parts, 
+to discriminate people from others. In reality, though, people do not always
+look completely diffenrent from each other. The usage of SVM, 
 in this case, strengthens the accuracy by its pattern recognition ability.
 
 Since the basic theory of SVM is used to classify data into two classes, we
@@ -100,3 +101,58 @@ It produces solid result within seconds, with an average miss rate of around
 Nevertheless, this algorithm is still not perfectly responsive to bad illumination
 and excessive burring.
 \cite{image-classification}
+
+\subsection*{Bioinformatics}
+In the bioinformatics field, two of the most common tasks are cancer
+diagnosis and protein secondary structure prediction (PSSP). Since both of these
+tasks are classification problems, SVM can be easily applied to them and is
+capable of generating high accuracy results.
+
+For cancer diagnosis, it is important to identify the types of cancer and the
+responsive genes. However, all genes tend to have high dimensionality, while 
+there are only a few samples available. For this problem, the research group
+from Nanyang Technological University applied SVM with Welch's t-test.
+The t-test shows the degree of differences between two groups of data points.
+Here, we first apply the t-test to the data points, based on which they are 
+ranked. Afterwards, we select the top data points and apply SVM to them.
+The result after applying this hybrid algorithm to several cancer datasets 
+shows a very high accuracy score. For the SRBCT and the Lymphoma dataset, the
+algorithm achieved a 100\% accuracy score. For the Leukemia dataset, the
+algorithm only missclassified one instance out of 34 samples.
+
+The PSSP problem is to predict the secondary structure of a protein. The
+protein sequence is a linear array of amino acids, which is the basic unit
+of a protein sequence and is called \emph{residue}.
+It consists of 3 consecutively ordered DNA bases (A, T, G, C). 
+The secondary structure of the protein is formed between small segments of 
+protein sequences with hydrogen bonds, which is mainly divided into 
+three types: \emph{$\alpha$-helix}, \emph{$\beta$-sheet}, and \emph{coil}. 
+In PCCP, we should classify the residues into these three types.
+The algorithm consists of two phases: Sequence-Structure Prediction (Q2T) and
+Structure-Structure Prediction (T2T). Q2T predicts the secondary structure
+from the protein sequences, whereas T2T helps correct the erros
+causes by Q2T. For Q2T, the SVM parameters alongside the window size are tuned
+to train the model. For the window size of 13 and 15, the highest accuracy score
+of 74.2\% is generated. T2T uses the output of Q2T as the input and corrects
+the errors. The highest accuracy score achieved is 78.2\%.
+\cite{bioinformatics}
+
+\subsection*{Handwriting Recognition}
+The process of handwriting recognition consists of three phases:
+pre-processing, feature extraction and classification. In the pre-processing
+phase, the images undergoes noise removal and binarization, skew detection
+and correction, segmentation, as well as normalization and thinning. Then, 
+the feature selection technique is implemented to determine the width/height
+ratio, number of endpoints, number of cross points and number of branch
+points. Finally, the SVM comes in to recognize the pattern. Like the usage of
+SVM in face recognition, the SVM is used in a one-against-all fashion, so that
+it can distinguish between different classes.
+
+In an experiment conducted on a dataset of 10,000 handwritten isolated
+Malayalam characters with 44 distinct characters. The dataset is divided
+into 80\% training set and 20\% testing set and trained in five iterations
+using cross validation. The SVM with polynomial kernal reports an average
+accuracy of 90.83\%, whereas the SVM with radial basis function kernel
+reports an average accuracy of 92.24\%, which is substantial subjected to 
+this problem.
+\cite{handwriting-recognition}

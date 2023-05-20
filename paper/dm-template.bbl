@@ -59,4 +59,14 @@ K.~Kim, K.~Jung, and J.~Kim, ``Color texture-based object detection: An
   application to license plate localization,'' vol. 2388, 01 2002, pp.
   293--309.
 
+\bibitem{bioinformatics}
+F.~Chu, G.~Jin, and L.~Wang, \emph{Cancer Diagnosis and Protein Secondary
+  Structure Prediction Using Support Vector Machines}, 11 2005, vol. 177, pp.
+  578--578.
+
+\bibitem{handwriting-recognition}
+D.~Nasien, H.~Haron, and S.~Yuhaniz, ``Support vector machine (svm) for english
+  handwritten character recognition,'' \emph{Computer Engineering and
+  Applications, International Conference on}, vol.~1, pp. 249--252, 01 2010.
+
 \end{thebibliography}

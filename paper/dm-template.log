@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -261,7 +261,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>]) (./application.tex [3]) (./conclusion.tex [4]) (./dm-template.bbl)
+) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>]) (./application.tex [3] [4]) (./conclusion.tex) (./dm-template.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -273,23 +273,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[5
-
-] (./dm-template.aux)
+[5] (./dm-template.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2870 strings out of 478268
- 48939 string characters out of 5835366
- 357745 words of memory out of 5000000
- 21049 multiletter control sequences out of 15000+600000
+ 2872 strings out of 478268
+ 48980 string characters out of 5835366
+ 357751 words of memory out of 5000000
+ 21051 multiletter control sequences out of 15000+600000
  503704 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,304b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dm-template.pdf (5 pages, 196794 bytes).
+Output written on dm-template.pdf (5 pages, 200318 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
