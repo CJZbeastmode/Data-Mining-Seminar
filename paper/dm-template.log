@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,59 +176,10 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/optidef/optidef.sty
-Package: optidef 2019/04/23 - version=3.1, Package for defining optimization problems
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/02/07 v1.28a mathematical typesetting tools
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count275
-\calc@Bcount=\count276
-\calc@Adimen=\dimen160
-\calc@Bdimen=\dimen161
-\calc@Askip=\skip56
-\calc@Bskip=\skip57
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count277
-\calc@Cskip=\skip58
-) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-\g_MT_multlinerow_int=\count278
-\l_MT_multwidth_dim=\dimen162
-\origjot=\skip59
-\l_MT_shortvdotswithinadjustabove_dim=\dimen163
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen164
-\l_MT_above_intertext_sep=\dimen165
-\l_MT_below_intertext_sep=\dimen166
-\l_MT_above_shortintertext_sep=\dimen167
-\l_MT_below_shortintertext_sep=\dimen168
-\xmathstrut@box=\box53
-\xmathstrut@dim=\dimen169
-) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/xifthen/xifthen.sty
-Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
-Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count279
-) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-02-24 L3 programming layer (loader) 
- (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count280
-\l__pdf_internal_box=\box54
-))
-Package: xparse 2022-01-12 L3 Experimental document command parser
-)
-\widthInit=\skip60
+\l__color_backend_stack_int=\count275
+\l__pdf_internal_box=\box53
 ) (./dm-template.aux
 
 LaTeX Warning: Label `fig:' multiply defined.
@@ -242,32 +193,32 @@ LaTeX Warning: Label `fig:' multiply defined.
 )
 \openout1 = `dm-template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
-LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 265.
+LaTeX Font Info:    ... okay on input line 265.
  (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
-\scratchdimen=\dimen170
-\scratchbox=\box55
-\nofMPsegments=\count282
-\nofMParguments=\count283
+\scratchcounter=\count276
+\scratchdimen=\dimen160
+\scratchbox=\box54
+\nofMPsegments=\count277
+\nofMParguments=\count278
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count284
-\MPscratchDim=\dimen171
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen161
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks26
 ) (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -310,7 +261,16 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>] [3]) (./section1.tex
+) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>]) [3] (./section1.tex
+
+LaTeX Warning: Citation `ietf-ipfix-protocol' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `snoeren2001hash' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `belenky2003ip' on page 4 undefined on input line 7.
+
 <figures//figure1.png, id=34, 497.86pt x 580.1675pt>
 File: figures//figure1.png Graphic file (type png)
 <use figures//figure1.png>
@@ -332,19 +292,22 @@ Before submitting the final camera ready copy, remember to:
 
  <./figures//figure1.png>] (./dm-template.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4363 strings out of 478268
- 77071 string characters out of 5835366
- 390118 words of memory out of 5000000
- 22490 multiletter control sequences out of 15000+600000
- 507421 words of font info for 100 fonts, out of 8000000 for 9000
+ 2901 strings out of 478268
+ 49328 string characters out of 5835366
+ 357752 words of memory out of 5000000
+ 21071 multiletter control sequences out of 15000+600000
+ 508528 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,77p,465b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,12n,62p,304b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dm-template.pdf (4 pages, 203062 bytes).
+Output written on dm-template.pdf (4 pages, 202754 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

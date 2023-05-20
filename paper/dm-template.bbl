@@ -21,28 +21,27 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{elements}
-T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical
-  Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip
-  1em plus 0.5em minus 0.4em\relax New York: Springer, 2009.
+\bibitem{R9}
+G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, \emph{An {Introduction} to
+  {Statistical} {Learning} with {Applications} in {R}}, second
+  edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2021,
+  ch. 9, Support Vector Machines.
 
-\bibitem{kernel}
+\bibitem{Kernel2}
 T.~Hofmann, B.~Sch{\"o}lkopf, and A.~J. Smola, \emph{Learning with Kernels:
   Support Vector Machines, Regularization, Optimization, and Beyond}.\hskip 1em
-  plus 0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 2002.
+  plus 0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 2002, ch. 2,
+  Kernels.
 
-\bibitem{ietf-ipfix-protocol}
-B.~Claise, ``{IPFIX} protocol specifications,'' Internet-Draft,
-  draft-ietf-ipfix-protocol-07, December 2004.
+\bibitem{Elements12}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip
+  1em plus 0.5em minus 0.4em\relax New York: Springer, 2009, ch. 12, Support
+  Vector Machines and Flexible Discriminants.
 
-\bibitem{snoeren2001hash}
-A.~C. Snoeren, C.~Partridge, L.~A. Sanchez, C.~E. Jones, F.~Tchakountio, S.~T.
-  Kent, and W.~T. Strayer, ``Hash-based {IP} traceback,'' in \emph{ACM SIGCOMM
-  2001 Conference on Applications, Technologies, Architectures, and Protocols
-  for Computer Communication}, 2001.
-
-\bibitem{belenky2003ip}
-A.~Belenky and N.~Ansari, ``{IP} traceback with deterministic packet marking,''
-  \emph{IEEE Communications Letters}, vol.~7, no.~4, pp. 162--164, 2003.
+\bibitem{Elements4}
+------, \emph{The Elements of Statistical Learning: Data Mining, Inference, and
+  Prediction}, second edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New
+  York: Springer, 2009, ch. 4, Linear Methods for Classification.
 
 \end{thebibliography}

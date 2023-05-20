@@ -3,12 +3,12 @@ The problem of support vector machine is an optimization problem. The goal is, a
 to find the optimal hyperplane that separates the data in a way that the margin is maximized.
 Therefore, it is important to first define the hyperplane.
 
-Since the hyperplane is a flat affine subspace of dimension $p$, we can easily define a hyperplane as: (Page 368 R)
+Since the hyperplane is a flat affine subspace of dimension $p$, we can easily define a hyperplane as \cite{R9}: 
 \begin{equation}
     \beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_pX_p = 0
 \end{equation}
 
-We can then denote $X$ and $\beta$ as vectors: (Page 418 elements learning)
+We can then denote $X$ and $\beta$ as vectors \cite{Elements12}: 
 \begin{equation}
     \{x \in \mathbb{R}^p: X^T \beta + \beta_0 = 0\}
 \end{equation}
@@ -33,7 +33,7 @@ descent, the algorithm updates the coefficients and intercept.
 \end{equation}
 However, the perceptron learning algorithm is not deterministic, since
 the result depends on the starting values. Furthermore, the algorithm does not converge if the data is not linearly separable, resulting
-in an infinite loop if the case was not detected beforehand.
+in an infinite loop if the case was not detected beforehand. \cite{Elements4}
 
 In 1996, Vapnik proposed the \emph{optimal separating hyperplane} algorithm in order to cope with the problems of the perceptron learning algorithm.
 This algorithm is widely implemented as maximum margin classifier.
@@ -51,9 +51,8 @@ To summarize:
 \begin{equation}
     y_i(X^T \beta + \beta_0) \geq 1,\ i = 1, ..., n
 \end{equation}
-(Page 370 R)
 
-To solve this problem, we construct the following optimization problem:
+To solve this problem, we construct the following optimization problem \cite{R9}:
 \begin{equation}
     \begin{aligned}
       & \underset{\textstyle {\beta, \beta_0}}{\text{maximize}} \quad
@@ -69,7 +68,7 @@ the condition by
 \begin{equation}
     \frac{1}{||\beta||}y_i(x_i^T \beta + \beta_0) \geq M
 \end{equation}
-We arbitrarily set $M = \frac{1}{||\beta||}$. The problem can be then reconstructed as:
+We arbitrarily set $M = \frac{1}{||\beta||}$. The problem can be then reconstructed as \cite{Elements4}:
 
 \begin{equation}
     \begin{aligned}
@@ -79,7 +78,6 @@ We arbitrarily set $M = \frac{1}{||\beta||}$. The problem can be then reconstruc
       & y_i(x_i^T \beta + \beta_0) \geq 1,\ i = 1, ..., n
     \end{aligned}
 \end{equation}
-(Page 132 elements)
 
 The two constraints of this optimization problem ensures that each observation is on the right side
 and has at least a distance of M from the hyperplane. It can be then solved in an efficient way using
@@ -96,7 +94,7 @@ but the result is as follows:
 \end{equation}
 where $\alpha$ is a vector of the weights of all the training points as support vectors
 under the condition of $\alpha_i \geq 0,\ i = 1, ..., n$. From these three equations, we can
-derive the following two properties:
+derive the following two properties \cite{Elements4}:
 \begin{itemize}
     \item if $\alpha_i > 0$, then $y_i(x_i^T\beta + \beta_0) - 1 = 0$, which is equivalent to
     $y_i(x_i^T\beta + \beta_0) = 0$. This means that the observation is on the margin.
@@ -113,7 +111,7 @@ given above, we can also define the support vector classifer. The hyperplane
 is chosen to correctly separate most of the dataset into two classes with the tolerance of a few errors.
 Thus we introduce a slack variable $\epsilon_i$, which allows individual observations to be on the wrong side 
 of the margin.
-The optimization problem is then defined as:
+The optimization problem is then defined as\cite{R9}:
 
 \begin{equation}
     \begin{aligned}
@@ -126,7 +124,6 @@ The optimization problem is then defined as:
     \end{aligned}
 \end{equation}
 
-(page 374 R)
 The interpretation of the slack variable helps us to determine whether an observation is on the correct side of the margin.
 The $i$th observation is on the correct side of the margin if $\epsilon_i = 0$. Otherwise, 
 the $i$th observation is on the wrong side of the margin if $\epsilon_i > 0$ and on the wrong side of the hyperplane
@@ -139,7 +136,7 @@ In practice, $C$ is chosen using cross-validation.
 Based on the optimization problem given above, we can derive the formal definition of SVM. In comparison to 
 support vector classifier, the SVM transform the data into a higher dimension space $p'$, so that the data could be
 linearly separable. For instance, we transform the features $X_1, X_2, ..., X_p$ into $X_1, X_1^{p'} X_2^{p'}, ..., X_p^{p'}$.
-The optimization problem with the transformed data can then be altered to: (R 380)
+The optimization problem with the transformed data can then be altered to\cite{R9}: 
 
 \begin{equation}
     \begin{aligned}
@@ -151,7 +148,7 @@ The optimization problem with the transformed data can then be altered to: (R 38
     \end{aligned}
 \end{equation}
 
-In order to perform the transformation and simplify this problem, we use a kernel function $K(x, x')$. It is defined as: (elements 424)
+In order to perform the transformation and simplify this problem, we use a kernel function $K(x, x')$. It is defined as \cite{Elements12}:
 \begin{equation}
     K(x, x') = \langle h(x), h(x') \rangle
 \end{equation}
@@ -178,7 +175,7 @@ As a result, the exponential term of the negative value of the Euclidean distanc
 In this case, the presence of $x^*$ will not have much effect on the transformation.
 On the other hand, if $x^*$ is close to $x_i$, then the exponential term will be close to one, which
 will exert a strong influence on the transformation. The radial kernel utilizes this property of the
-exponential function to emphasize the points that are close to the test observation $x^*$.
+exponential function to emphasize the points that are close to the test observation $x^*$ \cite{R9}.
 
 \begin{equation}
     K(x, x') = \exp(-\gamma ||x - x'||^2) = \exp(-\gamma \sum_{j=1}^p(x_{ij} - x_{i'j})^2)
@@ -186,4 +183,4 @@ exponential function to emphasize the points that are close to the test observat
 
 The implementation of kernels in SVM saves computational power, since for each pair of data points, we
 only need to calculate the transformed value once. Furthermore, the transformative property of the
-kernel leads to a flexible and precise boundary.
+kernel leads to a flexible and precise boundary. \cite{R9}

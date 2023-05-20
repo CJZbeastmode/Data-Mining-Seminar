@@ -43,7 +43,7 @@ the data points that are closest to the threshold are called support vectors.
 In reality, chances are that the data is not only one-dimensional. In fact, almost all of the data that we work with
 is multi-dimensional. In order to represent the data in a multi-dimensional space, we need to use vectors. In this case,
 the idea of hyperplane is introduced. A \emph{hyperplane} is a threshold that separates the data in a multi-dimensional space,
-which is formally defined as a flat affine subspace.\cite{elements} The support vector classifier is able to deal with this case as well.
+which is formally defined as a flat affine subspace.\cite{R9} The support vector classifier is able to deal with this case as well.
 It finds the hyperplane that separates the data in a way that the margin is maximized. The exact algorithms and the
 mathematical derivation will be discussed in the next section.
 
@@ -60,7 +60,7 @@ Usually, we use a \emph{kernel} to deal
 with this case, which is a function that maps the data into a higher dimensional space, so that the data becomes linearly
 separable. The SVM implements the idea of kernel without transforming the data into a higher dimensional space. This concept is 
 called \emph{the kernel trick} and is a crucial part of SVM. This trick allows SVM to cast nonlinear variants to dot products,
-enabling easier computation and better performance. (55)\cite{kernel}
+enabling easier computation and better performance. \cite{Kernel2}
 \begin{figure}[h]%
     \begin{center}%
         \includegraphics[scale=0.3]{Kernel_Separation.png}%
