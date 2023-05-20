@@ -325,6 +325,13 @@ INPUT ./application.tex
 INPUT application.tex
 INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT ./relative_merits.tex
+INPUT ./relative_merits.tex
+INPUT ./relative_merits.tex
+INPUT relative_merits.tex
+INPUT ./relative_merits.tex
+INPUT ./relative_merits.tex
+INPUT relative_merits.tex
 INPUT ./conclusion.tex
 INPUT ./conclusion.tex
 INPUT ./conclusion.tex
