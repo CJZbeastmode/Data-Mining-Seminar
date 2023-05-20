@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  20 MAY 2023 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -261,22 +261,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>]) [3] (./section1.tex
-
-LaTeX Warning: Citation `ietf-ipfix-protocol' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Citation `snoeren2001hash' on page 4 undefined on input line 7.
-
-
-LaTeX Warning: Citation `belenky2003ip' on page 4 undefined on input line 7.
-
-<figures//figure1.png, id=34, 497.86pt x 580.1675pt>
-File: figures//figure1.png Graphic file (type png)
-<use figures//figure1.png>
-Package pdftex.def Info: figures//figure1.png  used on input line 11.
-(pdftex.def)             Requested size: 49.78891pt x 58.02014pt.
-) (./conclusion.tex) (./dm-template.bbl)
+) [2 <./figures//Non_Linearly_Separable_Data.png> <./figures//Kernel_Separation.png>]) (./application.tex [3]) (./conclusion.tex) (./dm-template.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -288,29 +273,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the US letter (8.5in X 11in) paper size.
 
-[4
-
- <./figures//figure1.png>] (./dm-template.aux)
-
-LaTeX Warning: There were undefined references.
-
+[4] (./dm-template.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2901 strings out of 478268
- 49328 string characters out of 5835366
- 357752 words of memory out of 5000000
- 21071 multiletter control sequences out of 15000+600000
- 508528 words of font info for 101 fonts, out of 8000000 for 9000
+ 2869 strings out of 478268
+ 48917 string characters out of 5835366
+ 357742 words of memory out of 5000000
+ 21048 multiletter control sequences out of 15000+600000
+ 503704 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,304b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dm-template.pdf (4 pages, 203614 bytes).
+Output written on dm-template.pdf (4 pages, 195227 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

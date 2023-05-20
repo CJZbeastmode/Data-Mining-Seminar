@@ -1,0 +1,71 @@
+\section{Application}
+With the mathematical definition and deduction being discussed, we can now
+look at the application of SVM in real life. Being a classification method,
+SVM is widely used in many fields in order to distinguish data classes from
+another. In this section, we will discuss five fields that SVM is dominantly
+utilized in: Face recognition, text classification, image classification,
+bioinformatics and medical diagnosis, as well as handwriting recognition.
+
+\subsection*{Face Recognition}
+Face recognition is a biometric method that is used to identify a specific
+person. It captures facial features such as eyes, chins, nose, et cetera, and
+uses the properties, for example, the distance or the angel between two parts, 
+to distinguish one person from another. The difficulty of this method is that
+in reality, there are people who look similar to each other. The usage of SVM, 
+in this case, strengthens the accuracy by its pattern recognition ability.
+
+Since the basic theory of SVM is used to classify data into two classes, we
+need to modify the learning algorithm in order to apply it to the facial
+recognition use case. The key here is to combine multiple SVM models in order
+to construct a bottom-up binary tree. We compare each pair of nodes in the
+tree and the winner of the comparison will be promoted to the upper level.
+In the end, the unique class, which is the winner will appear on the top of 
+the tree. Given $C$ classes, this algorithm learns $C(C-1)/2$ SVM models at
+the training phase and performs $c-1$ comparisons at the testing phase.
+
+This algorithm is used on the Cambridge ORL face database for testing purposes, 
+which contains 40 people with 10 face images per person.
+The result shows that SVM performs better than other algorithms including
+pseudo two-dimensional HMMs (Hidden Markov Model) with a 5\% error rate 
+and CNN (Convolutional Neural Network) with a 3.83\% error rate. SVM has
+only classified 3.0\% of the images incorrectly. In another experiment,
+this algorithm is used to compete against the eigenface method
+with nearest center classification (NCC), which has been long applied
+in the face recognition field. Nevertheless, SVM still outperformed NCC,
+having scored a 8.79\% minimum error rate in comparison to NCC's 15.14\%.
+\cite{face-recognition}
+
+\subsection*{Text Classification}
+Dealing with text data has long been a challenge in the machine learning
+field and this task is no exemption for SVM. In order to suit the algorithm
+for text classification, we need to implement pool-based active learning
+to the SVM model. The idea is that the learner has access to a pool of
+unlabeled data and is allowed to request the label of some data points
+in the pool.
+
+Given a set of data points in a multidimensional space, we call the set
+of hyperplanes to separate the data points the version space. The goal of
+the newly implemented algorithm is to reduce the version space as fast as
+possible. Here, we introduce the idea of active learning, which consists of
+a boolean classifier, a query strategy and a set of unlabeled data points.
+In this case, we can choose the next query in a greedy way such that 
+the version space is reduced as fast as possible. There are three ways
+to instantiate this idea: 
+
+\begin{itemize}
+    \item \textbf{Simple Margin}: The algorithm picks the unlabeled instances
+    in the pool whose hyperplane comes closest to the SVM unit vector, which is
+    the center of the largest hypersphere that can fit inside the version space.
+    \item \textbf{MinMax Margin}: For each unlabeled instance, compute the margins
+    of the SVMs obtained when we label the instance as positive and negative
+    respectively. Then, we choose the instance with the smallest margin.
+    \item \textbf{Ratio Margin}: The algorithm works like MinMax Margin, but uses
+    the normalized margin instead of the absolute margin.
+\end{itemize}
+
+For inductive learning cases such as email filtering, a classifier is trained 
+based on a SVM with a set of labeled data points. 
+For transductive learning cases such as relevance feedback, the classifier
+learns a SVM with both labeled and unlabeled data points. In reality, it turns
+out that combining MinMax margin and ratio margin methods delivers the best
+result. \cite{text-classification}
