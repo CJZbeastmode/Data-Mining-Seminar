@@ -1,4 +1,4 @@
-\section{implementation}
+\section{Implementation}
 The problem of support vector machine is an optimization problem. The goal is, as mentioned, 
 to find the optimal hyperplane that separates the data in a way that the margin is maximized.
 Therefore, it is important to first define the hyperplane.
@@ -18,7 +18,7 @@ In other words, we need to construct linear decision
 boundaries that attempt to separate the data into two or more classes as precisely as possible. 
 The main two mechanics to this problem are Rosenblatt and Optimal.
 
-The \emph{Rosenblatt's perceptron learning algorithm} aims to find the optimal hyperplane in an iterative way. The algorithm minizies
+The \emph{Rosenblatt's perceptron learning algorithm} aims to find the optimal hyperplane in an iterative way. The algorithm minifies
 the distance of misclassified points to the decision boundary. The goal of this algorithm is to minimize the following equation
 \begin{equation}
     D(\beta, \beta_0) = \sum_{i\in M} -y_i(x_i^T \beta + \beta_0)
@@ -80,7 +80,7 @@ We arbitrarily set $M = \frac{1}{||\beta||}$. The problem can be then reconstruc
 \end{equation}
 
 The two constraints of this optimization problem ensures that each observation is on the right side
-and has at least a distance of M from the hyperplane. It can be then solved in an efficient way using
+and has at least a distance of M from the hyperplane. It can be then solved efficiently using
 Lagrange functions. The mathematical deduction is beyond the scope of this paper, 
 but the result is as follows:
 \begin{equation}
@@ -107,9 +107,9 @@ derive the following two properties \cite{Elements4}:
 
 However, the maximum margin classifier has zero tolerance for misclassification. As mentioned before,
 the support vector is designed to be more susceptible to misclassification. With the mathematical knowledge
-given above, we can also define the support vector classifer. The hyperplane
+given above, we can also define the support vector classifier. The hyperplane
 is chosen to correctly separate most of the dataset into two classes with the tolerance of a few errors.
-Thus we introduce a slack variable $\epsilon_i$, which allows individual observations to be on the wrong side 
+Thus, we introduce a slack variable $\epsilon_i$, which allows individual observations to be on the wrong side 
 of the margin.
 The optimization problem is then defined as\cite{R9}:
 
@@ -127,11 +127,11 @@ The optimization problem is then defined as\cite{R9}:
 The interpretation of the slack variable helps us to determine whether an observation is on the correct side of the margin.
 The $i$th observation is on the correct side of the margin if $\epsilon_i = 0$. Otherwise, 
 the $i$th observation is on the wrong side of the margin if $\epsilon_i > 0$ and on the wrong side of the hyperplane
-if $\epsilon_i > 1$. The parameter $C$, in this case, is the tuning paramter. It determines the budget of violations
+if $\epsilon_i > 1$. The parameter $C$, in this case, is the tuning parameter. It determines the budget of violations
 that could happen in this classification problem. The choice of $C$ plays a decisive role in the learning process.
 If $C$ is large, then many observations violate the margin, which causes the involvement of many observations in 
-determining the hyperplane. On the other hand, smaller $C$s result in a classifier with lower bias but higher varianace.
-In practice, $C$ is chosen using cross-validation. 
+determining the hyperplane. On the other hand, smaller $C$s result in a classifier with lower bias but higher variance.
+In practice, $C$ is chosen to use cross-validation. 
 
 Based on the optimization problem given above, we can derive the formal definition of SVM. In comparison to 
 support vector classifier, the SVM transform the data into a higher dimension space $p'$, so that the data could be
@@ -154,13 +154,13 @@ In order to perform the transformation and simplify this problem, we use a kerne
 \end{equation}
 where $h(x)$ is a transformation function. 
 The transformation process leaves us with a lot of freedom, and we are able to freely decide how we should transform the
-data. The two popular choices of kernel functions in pracitcal applications are:
+data. The two popular choices of kernel functions in practical applications are:
 \begin{itemize}
     \item dth-Degree Polynomial kernel: $K(x, x') = (1 + \langle x, x' \rangle)^d$
     \item Radial kernel: $K(x, x') = \exp(-\gamma ||x - x'||^2)$
 \end{itemize}
 
-First, let us discuss about the polynomial kernel. The polynomial kernel transforms each data point into a polynomial
+First, let us discuss the polynomial kernel. The polynomial kernel transforms each data point into a polynomial
 of degree $d$ and fits a support vector classifier into this higher-dimensional space. This 
 transformation leads to a flexible decision boundary. 
 \begin{equation}

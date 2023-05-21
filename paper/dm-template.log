@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  21 MAY 2023 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Homebrew) (preloaded format=pdflatex 2023.1.12)  21 MAY 2023 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -229,7 +229,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <figures//Maximum_Margin_Classifer.png, id=1, 462.528pt x 346.896pt>
 File: figures//Maximum_Margin_Classifer.png Graphic file (type png)
 <use figures//Maximum_Margin_Classifer.png>
-Package pdftex.def Info: figures//Maximum_Margin_Classifer.png  used on input line 21.
+Package pdftex.def Info: figures//Maximum_Margin_Classifer.png  used on input line 20.
 (pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
 
 
@@ -238,7 +238,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures//Support_Vector_Classifier.png, id=3, 462.528pt x 346.896pt>
 File: figures//Support_Vector_Classifier.png Graphic file (type png)
 <use figures//Support_Vector_Classifier.png>
-Package pdftex.def Info: figures//Support_Vector_Classifier.png  used on input line 41.
+Package pdftex.def Info: figures//Support_Vector_Classifier.png  used on input line 40.
 (pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
 [1{/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -247,12 +247,12 @@ Package pdftex.def Info: figures//Support_Vector_Classifier.png  used on input l
 <figures//Non_Linearly_Separable_Data.png, id=15, 462.528pt x 346.896pt>
 File: figures//Non_Linearly_Separable_Data.png Graphic file (type png)
 <use figures//Non_Linearly_Separable_Data.png>
-Package pdftex.def Info: figures//Non_Linearly_Separable_Data.png  used on input line 59.
+Package pdftex.def Info: figures//Non_Linearly_Separable_Data.png  used on input line 58.
 (pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
 <figures//Kernel_Separation.png, id=16, 462.528pt x 346.896pt>
 File: figures//Kernel_Separation.png Graphic file (type png)
 <use figures//Kernel_Separation.png>
-Package pdftex.def Info: figures//Kernel_Separation.png  used on input line 71.
+Package pdftex.def Info: figures//Kernel_Separation.png  used on input line 70.
 (pdftex.def)             Requested size: 138.75946pt x 104.0696pt.
 ) (./implementation.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
@@ -295,7 +295,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,304b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dm-template.pdf (6 pages, 208077 bytes).
+Output written on dm-template.pdf (6 pages, 208070 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

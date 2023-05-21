@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex dm-template"] 1684662816 "dm-template.aux" "dm-template.bbl" "dm-template" 1684663082
+["bibtex dm-template"] 1684663803 "dm-template.aux" "dm-template.bbl" "dm-template" 1684663916
   "./IEEEtran.bst" 1684585725 59506 016987d9be15acf51cdd7252d40ecec2 ""
   "IEEEabrv.bib" 1684585725 17781 22a7187dd8f9c9fdd01e2bc45cbcedf0 ""
-  "dm-template.aux" 1684663081 1936 ecdde8478c86b68ae7323df87b7ef9ae "pdflatex"
+  "dm-template.aux" 1684663915 1938 c58ceff4b4a278a33a236e50fade996d "pdflatex"
   "references.bib" 1684604012 3675 6d318bd424e371fc741ec588b1d8bef4 ""
   (generated)
   "dm-template.bbl"
   "dm-template.blg"
-["pdflatex"] 1684663081 "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" "dm-template.pdf" "dm-template" 1684663082
+["pdflatex"] 1684663915 "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" "dm-template.pdf" "dm-template" 1684663916
   "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" 1684603868 17498 f075821961c38b533c78feab6b961176 ""
   "/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1647894602 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-dist/fonts/map/fontname/texfonts.map" 1647894602 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -71,19 +71,19 @@
   "/opt/homebrew/Cellar/texlive/20220321_4/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1647894602 2826558 34ab3c7991c9386a688a168fbad84d8c ""
   "IEEEtran-modified.cls" 1684585725 197425 cff237b6fffa91207e98d9443410306a ""
   "abstract.tex" 1684603571 627 ac6df161dda209847dbe7baa90f102af ""
-  "application.tex" 1684600719 9309 3535b8e658908a429e2f9a35f96edd8b ""
-  "conclusion.tex" 1684603336 1560 e827154c4e5954cbae21792ff4a16df8 ""
-  "dm-template.aux" 1684663081 1936 ecdde8478c86b68ae7323df87b7ef9ae "pdflatex"
-  "dm-template.bbl" 1684662816 3378 92c222e71b47e13d62e71b32e86113e6 "bibtex dm-template"
+  "application.tex" 1684663751 9310 079a3e8f0fb11f1a4dfe503939032fa7 ""
+  "conclusion.tex" 1684663909 1562 b3e3039cf6eabfc62dcf73a707647f0a ""
+  "dm-template.aux" 1684663915 1938 c58ceff4b4a278a33a236e50fade996d "pdflatex"
+  "dm-template.bbl" 1684663803 3378 92c222e71b47e13d62e71b32e86113e6 "bibtex dm-template"
   "dm-template.tex" 1684603868 17498 f075821961c38b533c78feab6b961176 ""
   "figures//Kernel_Separation.png" 1684585725 20609 e15a14c7a20f3ae19391de2bfda0a901 ""
   "figures//Maximum_Margin_Classifer.png" 1684585725 9865 a2dd5f4feab6ff7d03051a9be0a7ee9e ""
   "figures//Non_Linearly_Separable_Data.png" 1684585725 10191 498fb29819641b80215bb0a5ab9bc6be ""
   "figures//Support_Vector_Classifier.png" 1684585725 9795 683d73939a17ba81c1f8766c267735a4 ""
-  "implementation.tex" 1684663004 9808 814e6d75ceb55850b44747a740192527 ""
-  "introduction.tex" 1684662823 4769 28af389650ff244584272c14b717111d ""
+  "implementation.tex" 1684663882 9797 e79ee3e4b4db0e63c8e09799269ee4c2 ""
+  "introduction.tex" 1684663790 4757 05a0fc35831d854834d6ce993b9e4e54 ""
   "keywords.tex" 1684603736 281 85cc22fe4f8bb6b920970a9bf47efcd7 ""
-  "relative_merits.tex" 1684663081 2713 1a3b3c57f85c5593f99ebdbc0bca0913 ""
+  "relative_merits.tex" 1684663915 2714 823ada7b00c01f76c56dbcfc68b2c10e ""
   "title.tex" 1684603843 88 1e5f635f39e8cba477772755a7e9ef2b ""
   (generated)
   "dm-template.aux"

@@ -12,7 +12,7 @@ to identify a specific
 person. It captures facial features such as eyes, chins, nose, et cetera, and
 uses the properties, for example, the distance or the angle between two parts, 
 to discriminate people from others. In reality, though, people do not always
-look completely diffenrent from each other. The usage of SVM, 
+look completely different from each other. The usage of SVM, 
 in this case, strengthens the accuracy by its pattern recognition ability.
 
 Since the basic theory of SVM is used to classify data into two classes, we
@@ -31,9 +31,9 @@ pseudo two-dimensional HMMs (Hidden Markov Model) with a 5\% error rate
 and CNN (Convolutional Neural Network) with a 3.83\% error rate. SVM has
 only classified 3.0\% of the images incorrectly. In another experiment,
 this algorithm is used to compete against the eigenface method
-with nearest center classification (NCC), which has been long applied
+with the nearest center classification (NCC), which has been long applied
 in the face recognition field. Nevertheless, SVM still outperformed NCC,
-having scored a 8.79\% minimum error rate in comparison to NCC's 15.14\%.
+having scored an 8.79\% minimum error rate in comparison to NCC's 15.14\%.
 \cite{face-recognition}
 
 \subsection*{Text Classification}
@@ -65,15 +65,15 @@ to instantiate this idea:
 \end{itemize}
 
 For inductive learning cases such as email filtering, a classifier is trained 
-based on a SVM with a set of labeled data points. 
+based on an SVM with a set of labeled data points. 
 For transductive learning cases such as relevance feedback, the classifier
-learns a SVM with both labeled and unlabeled data points. In reality, it turns
+learns an SVM with both labeled and unlabeled data points. In reality, it turns
 out that combining MinMax margin and ratio margin methods delivers the best
 result. \cite{text-classification}
 
 \subsection*{Image Classification}
 The problem of object detection in images is a challenging task in the
-data mining field. Some of the challenges include: Variations in shape
+data mining field. Some challenges include: Variations in shape
 due to distortions, variations in color due to illumination conditions,
 and variations in size due to perspective. 
 
@@ -89,11 +89,11 @@ follows:
     \item Estimate parameters of the license plate using mathematical equations.
     Parameters include: location, size, orientation, and so on.
     \item Modify the search windows based on the estimated parameters.
-    \item Reestimate the parameters using the new search windows.
+    \item Re-estimate the parameters using the new search windows.
     \item Output bounding windows as the result.
 \end{itemize}
 
-This algorithm is called continuously adaptive meanshift algorithm (CAMShift).
+This algorithm is called continuously adaptive mean shift algorithm (CAMShift).
 The main usage of SVM here is to predict the probability of a pixel belonging
 to a license plate, which enables to essential parameters to be accurately estimated.
 It produces solid result within seconds, with an average miss rate of around
@@ -118,7 +118,7 @@ ranked. Afterwards, we select the top data points and apply SVM to them.
 The result after applying this hybrid algorithm to several cancer datasets 
 shows a very high accuracy score. For the SRBCT and the Lymphoma dataset, the
 algorithm achieved a 100\% accuracy score. For the Leukemia dataset, the
-algorithm only missclassified one instance out of 34 samples.
+algorithm only misclassified one instance out of 34 samples.
 
 The PSSP problem is to predict the secondary structure of a protein. The
 protein sequence is a linear array of amino acids, which is the basic unit
@@ -130,7 +130,7 @@ three types: \emph{$\alpha$-helix}, \emph{$\beta$-sheet}, and \emph{coil}.
 In PCCP, we should classify the residues into these three types.
 The algorithm consists of two phases: Sequence-Structure Prediction (Q2T) and
 Structure-Structure Prediction (T2T). Q2T predicts the secondary structure
-from the protein sequences, whereas T2T helps correct the erros
+from the protein sequences, whereas T2T helps correct the errors
 causes by Q2T. For Q2T, the SVM parameters alongside the window size are tuned
 to train the model. For the window size of 13 and 15, the highest accuracy score
 of 74.2\% is generated. T2T uses the output of Q2T as the input and corrects
@@ -151,7 +151,7 @@ it can distinguish between different classes.
 In an experiment conducted on a dataset of 10,000 handwritten isolated
 Malayalam characters with 44 distinct characters. The dataset is divided
 into 80\% training set and 20\% testing set and trained in five iterations
-using cross validation. The SVM with polynomial kernal reports an average
+using cross validation. The SVM with polynomial kernel reports an average
 accuracy of 90.83\%, whereas the SVM with radial basis function kernel
 reports an average accuracy of 92.24\%, which is substantial subjected to 
 this problem.

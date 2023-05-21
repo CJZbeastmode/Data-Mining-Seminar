@@ -1,34 +1,33 @@
 
 \section{Introduction}
-One of the most important ascpects of machine learning is classification. Typical algorithms and models
+One of the most important aspects of machine learning is classification. Typical algorithms and models
 that are used for classification include logistic regression, naive bayes, decision trees and so on. In the 90s, 
 Vladimir Vapnik and his colleagues developed a new algorithm called \emph{Support Vector Machine (SVM)}, 
 which is also designed for classification problems. In this paper,
 we will focus on the main usages of SVM, including the generalization of linear decision boundaries for classification.
-We will also discuss the role of kernel in SVM, as well as the implementation, evaluation methods, application and many
-different aspects of SVM.
+We will also discuss the role of kernel in SVM, as well as the implementation, evaluation methods, application and many aspects of SVM.
 
 
 First, it would be helpful to take a look at an example of a simple data classification problem
 in a one-dimensional space.
-Assume that there are two sets of data points distributed along a one-dimensional axis.The classification then
-becomes obvious: The threshold that separates both groups simply lies in the middle of the the most outward data points
+Assume that there are two sets of data points distributed along a one-dimensional axis. The classification then
+becomes obvious: The threshold that separates both groups simply lies in the middle of the most outward data points
 from both groups. This classification method is called the \emph{maximum margin classifier}, since the margin that separates both
 groups is maximized.
 
 \begin{figure}[h]%
     \begin{center}%
         \includegraphics[scale=0.3]{Maximum_Margin_Classifer.png}%
-        \caption{Maximum Margin Classfier}\label{fig:}%
+        \caption{Maximum Margin Classifier}\label{fig:}%
     \end{center}%
 \end{figure}
 
-Nevertheless, the maximum margin classifier is not always applicable, since the data points are not always idealy distributed
+Nevertheless, the maximum margin classifier is not always applicable, since the data points are not always ideally distributed
 in a separated way. If an outlier happens to appear in the dataset, it would push the threshold to one side, since the data point
 is much closer to the other group. This would result in a severe misclassification, since the data that are close to one
 group now belongs to the other group because of the shift of the threshold. A solution to this problem is to allow some
 misclassification, so that the threshold has higher bias and is less sensitive to outliers and the classifier performs better
-when there is new data. This margin that allows some misclassification is called the \emph{soft margin}. The determination of soft margin 
+when there is new data. This margin that allows some misclassifications is called the \emph{soft margin}. The determination of soft margin 
 could be tricky, since there are limitless points of thresholds to choose from. One way to find the optimal threshold
 is to use Cross Validation. Cross Validation is a method that splits the dataset into several parts. For each repetition, 
 one part of the dataset is used for testing and the rest is used for training. After training through all the repetition, the 
@@ -39,7 +38,7 @@ the data points that are closest to the threshold are called support vectors.
 \begin{figure}[h]%
     \begin{center}%
         \includegraphics[scale=0.3]{Support_Vector_Classifier.png}%
-        \caption{Support Vector Classfier}\label{fig:}%
+        \caption{Support Vector Classifier}\label{fig:}%
     \end{center}%
 \end{figure}
 
@@ -47,13 +46,13 @@ For the real life application, nevertheless, the most dataset that we work with 
 most likely not going to be one-dimensional. Due to the multidimensional property of the dataset,
 we use vectors and matrices 
 to represent the data. In this case,
-the idea of hyperplane is introduced. A \emph{hyperplane} is a threshold that separates the data in a multi-dimensional space,
+the idea of hyperplane is introduced. A \emph{hyperplane} is a threshold that separates the data in a multidimensional space,
 which is formally defined as a flat affine subspace.\cite{R9} The support vector classifier is able to deal with this case as well.
 It finds the hyperplane that separates the data in a way that the margin is maximized. We will discuss the exact algorithm and the
 mathematics in the next section.
 
 However, the support vector classifier is still not suitable for data that is not linearly separable, even though 
-the support vector classifiers allows misclassifications and is less sensitive to outliers.
+the support vector classifiers allow misclassifications and is less sensitive to outliers.
 \begin{figure}[h]%
     \begin{center}%
         \includegraphics[scale=0.3]{Non_Linearly_Separable_Data.png}%
