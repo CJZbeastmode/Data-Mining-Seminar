@@ -1,14 +1,17 @@
 
 \section{Introduction}
 One of the most important ascpects of machine learning is classification. Typical algorithms and models
-that are used for classification include logistic regression, naive bayes, decision trees and so on. In the early 90s, 
-Vladimir Vapnik and his colleagues developed a new algorithm called \emph{Support Vector Machine (SVM)}, which is optimized for classification and regression analysis. In this paper,
+that are used for classification include logistic regression, naive bayes, decision trees and so on. In the 90s, 
+Vladimir Vapnik and his colleagues developed a new algorithm called \emph{Support Vector Machine (SVM)}, 
+which is also designed for classification problems. In this paper,
 we will focus on the main usages of SVM, including the generalization of linear decision boundaries for classification.
-We will also discuss the role of kernel in SVM, as well as the implementation, evalution methods, application and many
+We will also discuss the role of kernel in SVM, as well as the implementation, evaluation methods, application and many
 different aspects of SVM.
 
-In order to thoroughly understand the classification problem, we first need to look at a simple example in one dimension.
-Suppose there are two groups of data points that are separately distributed on a one-dimension number line. The classification then
+
+First, it would be helpful to take a look at an example of a simple data classification problem
+in a one-dimensional space.
+Assume that there are two sets of data points distributed along a one-dimensional axis.The classification then
 becomes obvious: The threshold that separates both groups simply lies in the middle of the the most outward data points
 from both groups. This classification method is called the \emph{maximum margin classifier}, since the margin that separates both
 groups is maximized.
@@ -40,12 +43,14 @@ the data points that are closest to the threshold are called support vectors.
     \end{center}%
 \end{figure}
 
-In reality, chances are that the data is not only one-dimensional. In fact, almost all of the data that we work with
-is multi-dimensional. In order to represent the data in a multi-dimensional space, we need to use vectors. In this case,
+For the real life application, nevertheless, the most dataset that we work with is 
+most likely not going to be one-dimensional. Due to the multidimensional property of the dataset,
+we use vectors and matrices 
+to represent the data. In this case,
 the idea of hyperplane is introduced. A \emph{hyperplane} is a threshold that separates the data in a multi-dimensional space,
 which is formally defined as a flat affine subspace.\cite{R9} The support vector classifier is able to deal with this case as well.
-It finds the hyperplane that separates the data in a way that the margin is maximized. The exact algorithms and the
-mathematical derivation will be discussed in the next section.
+It finds the hyperplane that separates the data in a way that the margin is maximized. We will discuss the exact algorithm and the
+mathematics in the next section.
 
 However, the support vector classifier is still not suitable for data that is not linearly separable, even though 
 the support vector classifiers allows misclassifications and is less sensitive to outliers.

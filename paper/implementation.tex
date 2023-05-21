@@ -160,7 +160,7 @@ data. The two popular choices of kernel functions in pracitcal applications are:
     \item Radial kernel: $K(x, x') = \exp(-\gamma ||x - x'||^2)$
 \end{itemize}
 
-Let us first take a look at the polynomial kernel. The polynomial kernel transforms each data point into a polynomial
+First, let us discuss about the polynomial kernel. The polynomial kernel transforms each data point into a polynomial
 of degree $d$ and fits a support vector classifier into this higher-dimensional space. This 
 transformation leads to a flexible decision boundary. 
 \begin{equation}
@@ -171,8 +171,8 @@ Another popular choice is the radial kernel. In order to understand the radial k
 the following scenario.
 If a given test observation $x^*$ is far away from the observation $x_i$,
 then the Euclidean distance between the two points will be large.
-As a result, the exponential term of the negative value of the Euclidean distance will be close to zero.
-In this case, the presence of $x^*$ will not have much effect on the transformation.
+As the result, the exponential term of the negative value of the Euclidean distance will be close to zero,
+which means that the presence of $x^*$ will not have much effect on the transformation.
 On the other hand, if $x^*$ is close to $x_i$, then the exponential term will be close to one, which
 will exert a strong influence on the transformation. The radial kernel utilizes this property of the
 exponential function to emphasize the points that are close to the test observation $x^*$ \cite{R9}.
