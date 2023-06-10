@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/Homebrew)
+This is BibTeX, Version 0.99d (TeX Live 2023/Homebrew)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dm-template.aux
 The style file: IEEEtran.bst
@@ -15,49 +15,48 @@ Database file #2: references.bib
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in R9
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in Elements12
 Warning--edition ordinal word "Second Edition" may be too high (or improper) for conversion in Elements4
-Warning--empty booktitle in image-classification
 Warning--missing publisher in bioinformatics
 
 Done.
 You've used 10 entries,
             4039 wiz_defined-function locations,
-            1272 strings with 16713 characters,
-and the built_in function-call counts, 6416 in all, are:
-= -- 496
-> -- 158
-< -- 44
-+ -- 80
-- -- 29
-* -- 346
-:= -- 952
+            1272 strings with 16675 characters,
+and the built_in function-call counts, 6014 in all, are:
+= -- 474
+> -- 147
+< -- 37
++ -- 72
+- -- 28
+* -- 328
+:= -- 925
 add.period$ -- 19
 call.type$ -- 10
 change.case$ -- 11
-chr.to.int$ -- 96
-cite$ -- 15
-duplicate$ -- 473
-empty$ -- 564
-format.name$ -- 39
-if$ -- 1471
+chr.to.int$ -- 75
+cite$ -- 14
+duplicate$ -- 453
+empty$ -- 526
+format.name$ -- 38
+if$ -- 1365
 int.to.chr$ -- 0
 int.to.str$ -- 10
-missing$ -- 84
+missing$ -- 81
 newline$ -- 55
 num.names$ -- 10
-pop$ -- 228
+pop$ -- 212
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 8
-skip$ -- 492
+skip$ -- 462
 stack$ -- 0
-substring$ -- 193
-swap$ -- 355
+substring$ -- 144
+swap$ -- 335
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 10
-warning$ -- 5
-while$ -- 22
+warning$ -- 4
+while$ -- 19
 width$ -- 12
-write$ -- 111
-(There were 5 warnings)
+write$ -- 112
+(There were 4 warnings)

@@ -3,7 +3,7 @@ With the mathematical definition and deduction being discussed, we can now
 look at the application of SVM in real life. Being a classification method,
 SVM is widely used in many fields in order to distinguish data classes from
 another. In this section, we will discuss five fields that SVM is dominantly
-utilized in: Face recognition, text classification, image classification,
+utilized in: Face recognition, text classification,
 bioinformatics and medical diagnosis, as well as handwriting recognition.
 
 \subsection*{Face Recognition}
@@ -11,13 +11,13 @@ Face recognition is a biometric method that is widely used to today in order
 to identify a specific
 person. It captures facial features such as eyes, chins, nose, et cetera, and
 uses the properties, for example, the distance or the angle between two parts, 
-to discriminate people from others. In reality, though, people do not always
+to discriminate a person from others. In reality, though, people do not always
 look completely different from each other. The usage of SVM, 
 in this case, strengthens the accuracy by its pattern recognition ability.
 
 Since the basic theory of SVM is used to classify data into two classes, we
 need to modify the learning algorithm in order to apply it to the facial
-recognition use case. The key here is to combine multiple SVM models in order
+recognition. The key here is to combine multiple SVM models in order
 to construct a bottom-up binary tree. We compare each pair of nodes in the
 tree and the winner of the comparison will be promoted to the upper level.
 In the end, the unique class, which is the winner will appear on the top of 
@@ -35,6 +35,19 @@ with the nearest center classification (NCC), which has been long applied
 in the face recognition field. Nevertheless, SVM still outperformed NCC,
 having scored an 8.79\% minimum error rate in comparison to NCC's 15.14\%.
 \cite{face-recognition}
+\begin{figure}[h]%
+    \begin{center}%
+        \includegraphics[scale=0.2]{Binary_Tree.png}%
+        \caption{The binary tree structure for 8 classes face recognition.
+        The numbers 1-8 encode the classes. 
+        Each class is first compared to the nearby node,
+        and the winner is promoted to the upper level.
+        After $\log_2(8) = 3$ comparisons,
+        the unique class number appears 
+        on the top of the tree.
+         \cite{face-recognition}}\label{fig:}%
+    \end{center}%
+\end{figure}
 
 \subsection*{Text Classification}
 Dealing with text data has long been a challenge in the machine learning
@@ -60,7 +73,7 @@ to instantiate this idea:
     \item \textbf{MinMax Margin}: For each unlabeled instance, compute the margins
     of the SVMs obtained when we label the instance as positive and negative
     respectively. Then, we choose the instance with the smallest margin.
-    \item \textbf{Ratio Margin}: The algorithm works like MinMax Margin, but uses
+    \item \textbf{Ratio Margin}: The algorithm works like MinMax margin, but uses
     the normalized margin instead of the absolute margin.
 \end{itemize}
 
@@ -70,37 +83,17 @@ For transductive learning cases such as relevance feedback, the classifier
 learns an SVM with both labeled and unlabeled data points. In reality, it turns
 out that combining MinMax margin and ratio margin methods delivers the best
 result. \cite{text-classification}
+\begin{figure}[h]%
+    \begin{center}%
+        \includegraphics[scale=0.15]{Text_Classification.png}%
+        \caption{
+        A simple comparison of simple margin and MinMax margin.
+        For this example, the simple margin will query \textbf{b},
+        whereas the MinMax margin will query \textbf{a}.
+        \cite{text-classification}}\label{fig:}%
+    \end{center}%
+\end{figure}
 
-\subsection*{Image Classification}
-The problem of object detection in images is a challenging task in the
-data mining field. Some challenges include: Variations in shape
-due to distortions, variations in color due to illumination conditions,
-and variations in size due to perspective. 
-
-For this problem, we observe a specific use case: The detection of
-license plates in images. The research group in Korea Advanced Institute of 
-Science and Technology has proposed an algorithm based on SVM to analyze the 
-color textural properties of the license plates. The algorithm goes as
-follows:
-
-\begin{itemize}
-    \item Set up initial locations and sizes of search windows in images.
-    \item Generate the license plate probability distribution using SVM.
-    \item Estimate parameters of the license plate using mathematical equations.
-    Parameters include: location, size, orientation, and so on.
-    \item Modify the search windows based on the estimated parameters.
-    \item Re-estimate the parameters using the new search windows.
-    \item Output bounding windows as the result.
-\end{itemize}
-
-This algorithm is called continuously adaptive mean shift algorithm (CAMShift).
-The main usage of SVM here is to predict the probability of a pixel belonging
-to a license plate, which enables to essential parameters to be accurately estimated.
-It produces solid result within seconds, with an average miss rate of around
-8.78\% and an average false detection rate of around 14.88\%.
-Nevertheless, this algorithm is still not perfectly responsive to bad illumination
-and excessive burring.
-\cite{image-classification}
 
 \subsection*{Bioinformatics}
 In the bioinformatics field, two of the most common tasks are cancer
@@ -122,12 +115,11 @@ algorithm only misclassified one instance out of 34 samples.
 
 The PSSP problem is to predict the secondary structure of a protein. The
 protein sequence is a linear array of amino acids, which is the basic unit
-of a protein sequence and is called \emph{residue}.
-It consists of 3 consecutively ordered DNA bases (A, T, G, C). 
+of a protein sequence. It consists of 3 consecutively ordered DNA bases (A, T, G, C). 
 The secondary structure of the protein is formed between small segments of 
 protein sequences with hydrogen bonds, which is mainly divided into 
 three types: \emph{$\alpha$-helix}, \emph{$\beta$-sheet}, and \emph{coil}. 
-In PCCP, we should classify the residues into these three types.
+In PSSP, we should classify the residues into these three types.
 The algorithm consists of two phases: Sequence-Structure Prediction (Q2T) and
 Structure-Structure Prediction (T2T). Q2T predicts the secondary structure
 from the protein sequences, whereas T2T helps correct the errors
@@ -136,6 +128,12 @@ to train the model. For the window size of 13 and 15, the highest accuracy score
 of 74.2\% is generated. T2T uses the output of Q2T as the input and corrects
 the errors. The highest accuracy score achieved is 78.2\%.
 \cite{bioinformatics}
+\begin{figure}[h]%
+    \begin{center}%
+        \includegraphics[scale=0.12]{PSSP.png}%
+        \caption{Two phases of PSSP \cite{bioinformatics}}\label{fig:}%
+    \end{center}%
+\end{figure}
 
 \subsection*{Handwriting Recognition}
 The process of handwriting recognition consists of three phases:
@@ -156,3 +154,9 @@ accuracy of 90.83\%, whereas the SVM with radial basis function kernel
 reports an average accuracy of 92.24\%, which is substantial subjected to 
 this problem.
 \cite{handwriting-recognition}
+\begin{figure}[h]%
+    \begin{center}%
+        \includegraphics[scale=0.15]{Thinned_Handwriting.png}%
+        \caption{Handwriting after binarization preprocessing \cite{handwriting-recognition}}\label{fig:}%
+    \end{center}%
+\end{figure}

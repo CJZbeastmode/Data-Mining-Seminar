@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -21,60 +20,36 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{imgintro}
+A.~Kirchner and C.~S. Signorino, ``Using support vector machines for survey research,'' \emph{Survey Practice}, vol.~11, no.~1, 1 2018.
+
 \bibitem{R9}
-G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, \emph{An {Introduction} to
-  {Statistical} {Learning} with {Applications} in {R}}, second
-  edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2021,
-  ch. 9, Support Vector Machines.
+G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, \emph{An {Introduction} to {Statistical} {Learning} with {Applications} in {R}}, second edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2021, ch. 9, Support Vector Machines.
 
 \bibitem{Kernel2}
-T.~Hofmann, B.~Sch{\"o}lkopf, and A.~J. Smola, \emph{Learning with Kernels:
-  Support Vector Machines, Regularization, Optimization, and Beyond}.\hskip 1em
-  plus 0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 2002, ch. 2,
-  Kernels.
+T.~Hofmann, B.~Sch{\"o}lkopf, and A.~J. Smola, \emph{Learning with Kernels: Support Vector Machines, Regularization, Optimization, and Beyond}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA: The MIT Press, 2002, ch. 2, Kernels.
 
 \bibitem{Elements12}
-T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical
-  Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip
-  1em plus 0.5em minus 0.4em\relax New York: Springer, 2009, ch. 12, Support
-  Vector Machines and Flexible Discriminants.
+T.~Hastie, R.~Tibshirani, and J.~Friedman, \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2009, ch. 12, Support Vector Machines and Flexible Discriminants.
 
 \bibitem{Elements4}
-------, \emph{The Elements of Statistical Learning: Data Mining, Inference, and
-  Prediction}, second edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New
-  York: Springer, 2009, ch. 4, Linear Methods for Classification.
+------, \emph{The Elements of Statistical Learning: Data Mining, Inference, and Prediction}, second edition~ed.\hskip 1em plus 0.5em minus 0.4em\relax New York: Springer, 2009, ch. 4, Linear Methods for Classification.
 
 \bibitem{face-recognition}
-G.~Guo, S.~Li, and K.~Chan, ``Face recognition by support vector machines,''
-  \emph{Proceedings of the Fourth IEEE International Conference on Automatic
-  Face and Gesture Recognition}, 02 1970.
+G.~Guo, S.~Li, and K.~Chan, ``Face recognition by support vector machines,'' \emph{Proceedings of the Fourth IEEE International Conference on Automatic Face and Gesture Recognition}, 02 1970.
 
 \bibitem{text-classification}
-S.~Tong and D.~Koller, ``Support vector machine active learning with
-  applications to text classification,'' \emph{The Journal of Machine Learning
-  Research}, vol.~2, pp. 45--66, 12 2001.
-
-\bibitem{image-classification}
-K.~Kim, K.~Jung, and J.~Kim, ``Color texture-based object detection: An
-  application to license plate localization,'' vol. 2388, 01 2002, pp.
-  293--309.
+S.~Tong and D.~Koller, ``Support vector machine active learning with applications to text classification,'' \emph{The Journal of Machine Learning Research}, vol.~2, pp. 45--66, 12 2001.
 
 \bibitem{bioinformatics}
-F.~Chu, G.~Jin, and L.~Wang, \emph{Cancer Diagnosis and Protein Secondary
-  Structure Prediction Using Support Vector Machines}, 11 2005, vol. 177, pp.
-  578--578.
+F.~Chu, G.~Jin, and L.~Wang, \emph{Cancer Diagnosis and Protein Secondary Structure Prediction Using Support Vector Machines}, 11 2005, vol. 177, pp. 578--578.
 
 \bibitem{handwriting-recognition}
-D.~Nasien, H.~Haron, and S.~Yuhaniz, ``Support vector machine (svm) for english
-  handwritten character recognition,'' \emph{Computer Engineering and
-  Applications, International Conference on}, vol.~1, pp. 249--252, 01 2010.
+D.~Nasien, H.~Haron, and S.~Yuhaniz, ``Support vector machine (svm) for english handwritten character recognition,'' \emph{Computer Engineering and Applications, International Conference on}, vol.~1, pp. 249--252, 01 2010.
 
 \bibitem{procon}
 \BIBentryALTinterwordspacing
-L.~Auria and R.~A. Moro, ``\BIBforeignlanguage{en}{Support {Vector} {Machines}
-  ({SVM}) as a {Technique} for {Solvency} {Analysis}},''
-  \emph{\BIBforeignlanguage{en}{SSRN Electronic Journal}}, 2008. [Online].
-  Available: \url{http://www.ssrn.com/abstract=1424949}
+L.~Auria and R.~A. Moro, ``\BIBforeignlanguage{en}{Support {Vector} {Machines} ({SVM}) as a {Technique} for {Solvency} {Analysis}},'' \emph{\BIBforeignlanguage{en}{SSRN Electronic Journal}}, 2008. [Online]. Available: \url{http://www.ssrn.com/abstract=1424949}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
