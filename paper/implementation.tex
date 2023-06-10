@@ -126,7 +126,7 @@ if $\epsilon_i > 1$. The parameter $C$, in this case, is the tuning parameter. I
 that could happen in this classification problem. The choice of $C$ plays a decisive role in the learning process.
 If $C$ is large, then many observations violate the margin, which causes the involvement of many observations in 
 determining the hyperplane. On the other hand, smaller $C$s result in a classifier with lower bias but higher variance.
-In practice, $C$ is chosen using cross-validation. 
+In practice, cross-validation is used to choose the ideal $C$. 
 
 Based on the optimization problem given above, we can derive the formal definition of SVM. In comparison to 
 soft margin classifier, the SVM transform the data into a higher dimension space $p'$, so that the data could be
