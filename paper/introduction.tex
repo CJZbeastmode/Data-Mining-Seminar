@@ -1,10 +1,10 @@
 
 \section{Introduction}
 One of the most important aspects of machine learning is classification. Typical algorithms and models
-that are used for classification include logistic regression, naive bayes, decision trees and so on. In the 90s, 
+that are used for classification include logistic regression, Naive Bayes, decision trees, and so on. In the 90s, 
 Vladimir Vapnik and his colleagues developed a new algorithm called \emph{Support Vector Machine (SVM)}.
 The name of this algorithm comes from the fact that the algorithm is based on the concept of \emph{support vectors},
-which are the data points that are closest to the threshold. This algorithm is dedicated to the classification
+which is the distance of the observation on the edge and within the margin. This algorithm is dedicated to the classification
 of both linearly separable and non-linearly separable data points. In this paper,
 we will focus on the main usages of SVM, including the generalization of linear decision boundaries for classification.
 We will also discuss the role of kernel in SVM, as well as the implementation, evaluation methods, application and many aspects of SVM.
@@ -25,8 +25,8 @@ Nevertheless, the maximum margin classifier is not always applicable, since the 
 is much closer to the other group. This would result in a severe misclassification, since the data that are close to one
 group now belongs to the other group because of the shift of the threshold. A solution to this problem is to allow some
 misclassification, so that the threshold is less sensitive to outliers and the classifier performs better
-when there is new data. This margin that allows some misclassifications is called the \emph{soft margin} and
-the classifier that is used to separate the data points is thus called \emph{soft margin classifier}.
+when there is new data. This margin that allows some misclassifications is called the \emph{soft margin}, and
+the classifier that is used to separate the data points is thus called the \emph{soft margin classifier}.
 \begin{figure}[h]%
     \begin{center}%
         \includegraphics[scale=0.12]{Soft_Margin_Classifier.jpg}%
@@ -34,9 +34,9 @@ the classifier that is used to separate the data points is thus called \emph{sof
     \end{center}%
 \end{figure}
 
-For the real life application, nevertheless, the most dataset that we work with is 
+For the real-life application, nevertheless, the most datasets that we work with are
 most likely not going to be one-dimensional. Due to the multidimensional property of the dataset,
-we use vectors and matrices to represent the data. In this case, the idea of hyperplane is introduced. 
+we use vectors and matrices to represent the data. In this case, the idea of a hyperplane is introduced. 
 
 A \emph{hyperplane} is a flat affine subspace that is one dimension lower than the ambient space.\cite{R9}
 It is used to separate the data in multidimensional space. The soft margin classifier is able to deal with this case as well.
@@ -45,8 +45,8 @@ mathematics in the next section.
 
 However, the soft margin classifier is still not suitable for data that is not linearly separable, even though 
 the soft margin classifiers allow misclassifications and is less sensitive to outliers. Usually, we use a \emph{kernel} to deal 
-with this case, which is a function that maps the data into a higher dimensional space, so that the data becomes linearly
-separable. The SVM implements the idea of kernel without transforming the data into a higher dimensional space. This concept is 
+with this case, which is a function that maps the data into a higher dimensional space so that the data becomes linearly
+separable. The SVM implements the idea of the kernel without transforming the data into a higher dimensional space. This concept is 
 called \emph{the kernel trick} and is a crucial part of SVM. This trick allows SVM to cast nonlinear variants to dot products,
 enabling easier computation and better performance. \cite{Kernel2}
 \begin{figure}[h]%

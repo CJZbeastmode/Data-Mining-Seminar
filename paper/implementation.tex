@@ -10,13 +10,13 @@ Since the hyperplane is a flat affine subspace of dimension $p$, we can easily d
 
 We can then denote $X$ and $\beta$ as vectors \cite{Elements12}: 
 \begin{equation}
-    \{x \in \mathbb{R}^p: X^T \beta + \beta_0 = 0\}
+    \{X \in \mathbb{R}^p: X^T \beta + \beta_0 = 0\}
 \end{equation}
 
-With hyperplane being defined, we are now able to observe the problem of separating the spaces of the hyperplane. 
+With the hyperplane being defined, we are now able to observe the problem of separating the spaces of the hyperplane. 
 In other words, we need to construct linear decision
 boundaries that attempt to separate the data into two or more classes as precisely as possible. 
-The main two approaches to this problem are Rosenblatt and Optimal.
+The two main approaches to this problem are Rosenblatt and Optimal.
 
 The \emph{Rosenblatt's perceptron learning algorithm} aims to find the optimal hyperplane in an iterative way. The algorithm minifies
 the distance of misclassified points to the decision boundary. The goal of this algorithm is to minimize the following equation
@@ -37,7 +37,7 @@ in an infinite loop if the case was not detected beforehand. \cite{Elements4}
 
 In 1996, Vapnik proposed the \emph{optimal separating hyperplane} algorithm in order to cope with the problems of the perceptron learning algorithm.
 This algorithm is widely known as maximum margin classifier.
-The goal of the algorithm is to find a hyperplane that maximize the distance to the closet point from either class. [Vapnik, 1996]
+The goal of the algorithm is to find a hyperplane that maximize the distance to the closet point from either class.
 The observation of both classes is denoted as $y_i = 1$ and $y_i = -1$. The separating hyperplane then has the following property:
 
 \begin{equation}
@@ -78,8 +78,8 @@ If we arbitrarily set $M = \frac{1}{||\beta||}$, then the problem can be then re
     \end{aligned}
 \end{equation}
 
-The two constraints of this optimization problem ensures that each observation is on the right side
-and has at least a distance of M from the hyperplane. It can be then solved efficiently using
+The two constraints of this optimization problem ensure that each observation is on the right side
+and has at least a distance of \emph{M} from the hyperplane. It can be then solved efficiently using
 Lagrange functions.
 \begin{equation}
     L_P(\beta, \lambda) = \frac 1 {||\beta||} - \sum_{i=1}^N \lambda_i [ y_i (x_i^T \beta + \beta_0) - 1 ]
@@ -129,7 +129,7 @@ determining the hyperplane. On the other hand, smaller $C$s result in a classifi
 In practice, cross-validation is used to choose the ideal $C$. 
 
 Based on the optimization problem given above, we can derive the formal definition of SVM. In comparison to 
-soft margin classifier, the SVM transform the data into a higher dimension space $p'$, so that the data could be
+soft margin classifier, the SVM transforms the data into a higher dimension space $p'$, so that the data could be
 linearly separable. For instance, we transform the features $X_1, X_2, ..., X_p$ into $X_1, X_1^{p'} X_2^{p'}, ..., X_p^{p'}$.
 The optimization problem with the transformed data can then be altered to\cite{R9}: 
 
@@ -166,7 +166,7 @@ Another popular choice is the radial kernel. In order to understand the radial k
 the following scenario.
 If a given test observation $x^*$ is far away from the observation $x_i$,
 then the Euclidean distance between the two observations will be large.
-As the result, the exponential term of the negative value of the Euclidean distance will be close to zero,
+As a result, the exponential term of the negative value of the Euclidean distance will be close to zero,
 which means that the presence of $x^*$ will not have much effect on the transformation.
 On the other hand, if $x^*$ is close to $x_i$, then the exponential term will be close to one, which
 will exert a strong influence on the transformation. The radial kernel utilizes this property of the
