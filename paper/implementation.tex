@@ -16,7 +16,8 @@ We can then denote $X$ and $\beta$ as vectors \cite{Elements12}:
 With the hyperplane being defined, we are now able to observe the problem of separating the spaces of the hyperplane. 
 In other words, we need to construct linear decision
 boundaries that attempt to separate the data into two or more classes as precisely as possible. 
-The two main approaches to this problem are Rosenblatt and Optimal.
+The two main approaches to this problem are the \emph{Rosenblatt's perceptron learning algorithm}
+and the \emph{optimal separating hyperplane algorithm}.
 
 The \emph{Rosenblatt's perceptron learning algorithm} aims to find the optimal hyperplane in an iterative way. The algorithm minifies
 the distance of misclassified points to the decision boundary. The goal of this algorithm is to minimize the following equation
@@ -36,7 +37,7 @@ the result depends on the starting values. Furthermore, the algorithm does not c
 in an infinite loop if the case was not detected beforehand. \cite{Elements4}
 
 In 1996, Vapnik proposed the \emph{optimal separating hyperplane} algorithm in order to cope with the problems of the perceptron learning algorithm.
-This algorithm is widely known as maximum margin classifier.
+This algorithm implements the idea of maximum margin classifier, which is mentioned before.
 The goal of the algorithm is to find a hyperplane that maximize the distance to the closet point from either class.
 The observation of both classes is denoted as $y_i = 1$ and $y_i = -1$. The separating hyperplane then has the following property:
 
@@ -143,7 +144,8 @@ The optimization problem with the transformed data can then be altered to\cite{R
     \end{aligned}
 \end{equation}
 
-In order to perform the transformation and simplify this problem, we use a kernel function $K(x, x')$. It is defined as \cite{Elements12}:
+However, this optimization problem is too complicated.
+In order to simplify this problem, we use a kernel function $K(x, x')$ to perform data transformation. It is defined as \cite{Elements12}:
 \begin{equation}
     K(x, x') = \langle h(x), h(x') \rangle
 \end{equation}
