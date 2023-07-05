@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex dm-template"] 1688570658 "dm-template.aux" "dm-template.bbl" "dm-template" 1688571805 0
+["bibtex dm-template"] 1688570658 "dm-template.aux" "dm-template.bbl" "dm-template" 1688586577 0
   "./IEEEabrv.bib" 1684585725 17781 22a7187dd8f9c9fdd01e2bc45cbcedf0 ""
   "./IEEEtran.bst" 1684585725 59506 016987d9be15acf51cdd7252d40ecec2 ""
   "./references.bib" 1686406347 3938 804d716e29a981fc3b00a48f8f1aad05 ""
-  "dm-template.aux" 1688571805 3152 609dceff788037e1ba836fc44a3953a0 "pdflatex"
+  "dm-template.aux" 1688586576 3152 609dceff788037e1ba836fc44a3953a0 "pdflatex"
   (generated)
   "dm-template.bbl"
   "dm-template.blg"
   (rewritten before read)
-["pdflatex"] 1688571804 "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" "dm-template.pdf" "dm-template" 1688571805 0
+["pdflatex"] 1688586576 "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" "dm-template.pdf" "dm-template" 1688586577 0
   "/Users/jay/Desktop/Data-Mining-Seminar/paper/dm-template.tex" 1686389592 17544 ec1318142fcc89a473bb2e546f18befb ""
   "/opt/homebrew/Cellar/texlive/20230313_1/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1678549815 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20230313_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1678549815 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -83,7 +83,7 @@
   "abstract.tex" 1688570421 637 880d3a645490a7d7d6302a1f97602668 ""
   "application.tex" 1688571775 8970 aae3e8f6503cb8f6133244ad7e4478c8 ""
   "conclusion.tex" 1688571804 1514 94aadb6e1324efc43383ae427eb40648 ""
-  "dm-template.aux" 1688571805 3152 609dceff788037e1ba836fc44a3953a0 "pdflatex"
+  "dm-template.aux" 1688586576 3152 609dceff788037e1ba836fc44a3953a0 "pdflatex"
   "dm-template.bbl" 1688570658 3301 cbdd6a9e41bd232be6e61211fad4413e "bibtex dm-template"
   "dm-template.tex" 1686389592 17544 ec1318142fcc89a473bb2e546f18befb ""
   "figures//Binary_Tree.png" 1686408140 38650 8a2d305b50b0e2d4594c1ff5929989e9 ""
@@ -93,7 +93,7 @@
   "figures//Soft_Margin_Classifier.jpg" 1686406186 135589 7df47e9b97885e9e851eee23c8c49c07 ""
   "figures//Text_Classification.png" 1686408466 179273 6fef8d32c865b6b2470e5942dbf20e23 ""
   "figures//Thinned_Handwriting.png" 1686407566 131137 638f5a61b98e5963c1ef4b29fc5eab0a ""
-  "implementation.tex" 1688571742 9965 f1bc4a0dd6bc0f41e2e1ca8bfe22f531 ""
+  "implementation.tex" 1688586575 9944 13fbecf19dc276dab66a41e178090821 ""
   "introduction.tex" 1688571638 4219 e5803880da0e1416625aae7476cc7c9b ""
   "keywords.tex" 1686387375 187 c8483889559583a5728eeb6da8cd3182 ""
   "relative_merits.tex" 1688570909 2678 ad8de8628f1dfdfa434b2da9b193f38c ""

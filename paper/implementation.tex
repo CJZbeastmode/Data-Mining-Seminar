@@ -114,7 +114,7 @@ The optimization problem is then defined as\cite{R9}:
       & \underset{\textstyle {\beta, \beta_0, \epsilon}}{\text{maximize}} \quad
         \frac 1 {||\beta||} \\
       & \text{subject to} \\
-      & y_i(x_i^T \beta + \beta_0) \geq \frac{1}{||\beta||}(1-\epsilon_i),\ i = 1, ..., n, \\
+      & y_i(x_i^T \beta + \beta_0) \geq 1-\epsilon_i,\ i = 1, ..., n, \\
       & \epsilon_i \geq 0, \ \sum_{i=1}^n \epsilon_i \leq C
     \end{aligned}
 \end{equation}
